@@ -116,3 +116,142 @@ nav ul li a:hover {
 .jumbotron h1 {
     margin-bottom: 1px;
 }
+
+/* main */
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 40px 20px;
+}
+
+.content {
+    flex-direction: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem 2rem;
+}
+
+/* about section */
+#about p {
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+/* tools and sklills section */
+#toolsSkills .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#toolsSkills img {
+    width: 100%;
+    max-height: 300px;
+    object-position: center;
+}
+
+#toolsSkills h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* hobby section */
+#hobby .foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+#hobby img {
+    width: 100%;
+    max-height: 300px;
+    object-position: center;
+    border-radius: 50%;
+}
+
+#hobby h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type='text'],
+textarea {
+    outline: none;
+    padding: 10px 20px;
+    background-color: #e8e8e8;
+    border: solid 3px #e8e8e8;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+input[type='text']:focus,
+textarea:focus {
+    background-color: white;
+    border: solid 3px #90AFC5;
+    transition: all .5s;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+input[type=submit] {
+    background-color: #eaf8ff;
+    color: #134b74;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all .2s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: #134b74;
+    color: #eaf8ff;
+}
+
+/* aside */
+aside {
+    width: 25%;
+    flex: 1;
+    text-align: center;
+}
+
+article.profile figure img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+aside h3 {
+    font-size: 16px;
+}
