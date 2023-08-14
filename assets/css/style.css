@@ -255,3 +255,86 @@ article.profile figure img {
 aside h3 {
     font-size: 16px;
 }
+
+/* footer */
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #134b74;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+/* responsive breakpoint */
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+/* ukuran pc */
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    main aside .card {
+        align-self: stretch;
+    }
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+
+/* mobile size */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        top: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        background-color: #134b74;
+        width: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: .8;
+        /* z-index: 10; */
+        transform: translateX(0);
+    }
+
+}
